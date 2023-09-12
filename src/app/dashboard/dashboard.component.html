@@ -1,0 +1,16 @@
+
+<div class="parent">
+    <div class="left">
+        <h2 routerLink="dashboard"> Dashboard</h2><br>
+        <hr><br>
+        <h5 routerLink="home">Home</h5><br>
+        <h5 routerLink="createstudent">Create student</h5><br>
+        <h5 routerLink="allstudents">All students</h5><br><br>
+         <button class="btn btn-secondary" (click)="logout()">logout</button>
+
+    </div>
+    <div class="right">
+        <router-outlet></router-outlet>
+
+    </div>
+</div>

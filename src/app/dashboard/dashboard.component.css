@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.parent{
+    height: 100vh;
+    width:100vw;
+    background-color: rgb(167, 207, 207);
+    display: flex;
+
+}
+ .left{
+
+    width:20%;
+    height:100%;
+    background-color: aliceblue;
+    justify-content: center;
+    /* padding-left: 70px; */
+    text-align: center;
+    
+}
+.right{
+    width: 80%;
+    height:100%
+}
+h5:hover{
+    
+    background-color: lightgrey;
+    cursor: pointer;
+    color: rgb(26, 136, 136);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+
+}
+button:hover{
+    cursor: pointer;
+    color:rgb(43, 173, 169)
+}
+
+h2:hover{
+    cursor: pointer;
+    color: rgb(39, 152, 156);
+}

@@ -1,0 +1,41 @@
+<div class="parent">
+    <form [formGroup]="studentsform">
+        <label>Name :</label>
+        <input type="text" formControlName="name"><br>
+       <div class="text-danger" *ngIf="studentsform.get('name')?.touched && studentsform.get('name')?.invalid ">
+         <p *ngIf="studentsform.get('name')?.errors?.['required']">name is required</p>
+        </div>
+        <label>Class :</label>
+        <input type="text" formControlName="class"><br>
+        <label>Fathername:</label>
+        <input type="text" formControlName="fathername"><br>
+        <label>Email:</label>
+        <input type="email" formControlName="email"><br>
+        <label>Date of birth :</label>
+        <input type="date" formControlName="dob"><br>
+        <!-- <button class="btn btn-secondary">Submit</button> -->
+        <div formGroupName="">
+            <label>AddressLine</label>
+            <input type="text" formControlName="addressLine"><br>
+            <label> City</label>
+            <input type="text" formControlName="city"><br>
+            <label>State</label>
+            <input type="text" formControlName="state"><br>
+            <label>Pincode</label>
+            <input type="number" formControlName="pincode"><br>
+            <!-- <button (click)="submit()" class="btn btn-secondary">Submit</button> -->
+       <button (click)="marks()">marks</button>
+       <button (click)="deletemarks()">delete</button>
+       <div formArrayName="marks">
+        <div *ngFor="let mark of marksformArray.controls">
+          <label>class:</label>
+          <input type="number"><br>
+          <label >year:</label>
+          <input type="text"><br>
+          <label for="">percentage:</label>
+        </div>
+       </div>
+        </div>
+        <!-- <button (click)="delete()">Delete</button> -->
+    </form>
+</div>

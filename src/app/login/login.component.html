@@ -1,11 +1,11 @@
 <div class="parent">
-    <form action="">
+    <form [formGroup]="loginform">
         <label>Student email</label>
-        <input type="email" placeholder="Enter email id"><br>
+        <input type="email" placeholder="Enter email id" formControlName="email"><br>
         <label for="">Password</label>
-        <input type="number" placeholder="Enter password">
+        <input type="text" placeholder="Enter password" formControlName="password">
         <div>
-            <button class="btn btn-primary">login</button>
+            <button class="btn btn-primary" (click)="login()">login</button>
         </div>
 
     </form>

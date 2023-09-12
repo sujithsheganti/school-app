@@ -3,12 +3,13 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: rgb(162, 204, 204);
 }
 form{
     
     width: 400px;
     height: 400px;
-    background-color: rgb(195, 191, 191);
+    background-color:aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +19,7 @@ form{
 }  
  label{
     width: 200px;
-    margin: 15px;
+    margin: 10px;
     font-size: 30px;
     color: rgb(29, 91, 216);
     margin-left: 50px;
@@ -34,4 +35,13 @@ input{
     height: 40px;
     border-radius: 10px;
     padding: 10px;
+}
+label:hover{
+    cursor: pointer;
+    color: rgb(168, 214, 214);
+}
+
+button:hover{
+    cursor: pointer;
+    color: rgb(165, 219, 219);
 }
